@@ -1,0 +1,350 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Common, readable font */
+    line-height: 1.6; /* Improves readability of text */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arranges list items in a row */
+    justify-content: center; /* Centers navigation items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 1.5rem; /* Space between nav items */
+}
+
+nav li {
+    margin: 0.5rem 0; /* Vertical margin for smaller screens */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border-radius: 5px; /* Slightly rounded corners for buttons */
+}
+
+nav a:hover,
+nav a:focus { /* Hover and focus states */
+    background-color: #555; /* Darker background on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limits content width for better readability */
+    margin: 20px auto; /* Centers the main content block */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for the main content box */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+}
+
+section:last-of-type {
+    border-bottom: none; /* No border for the last section */
+}
+
+h2 {
+    color: #0056b3; /* A distinct color for section headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify; /* Justifies text for a cleaner look */
+}
+
+/* Specific Section Adjustments */
+#firstPage {
+    background-color: #007bff; /* Blue background for the hero section */
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#firstPage h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#firstPage p {
+    font-size: 1.5rem;
+}
+
+/* Tourism Section Articles */
+#tourism article {
+    display: flex; /* Arrange image and text side-by-side */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 2rem;
+    gap: 1.5rem; /* Space between image and text */
+    flex-direction: column; /* Default to column on small screens */
+}
+
+#tourism article:nth-child(even) {
+    flex-direction: column-reverse; /* Alternate image/text order */
+}
+
+.tourismPictures {
+    max-width: 100%; /* Ensures images fit within their container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tourism figure {
+    margin: 0; /* Remove default margin for figure */
+    text-align: center;
+}
+
+#tourism figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Language Section Table */
+#lang table {
+    width: 80%; /* Table takes 80% of container width */
+    margin: 0 auto 2rem auto; /* Center table and add bottom margin */
+    border-collapse: collapse; /* Collapses borders for a cleaner look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#lang th,
+#lang td {
+    border: 1px solid #ddd; /* Light grey borders */
+    padding: 12px;
+    text-align: left;
+}
+
+#lang th {
+    background-color: #007bff; /* Blue header for table */
+    color: white;
+    text-transform: uppercase;
+}
+
+#lang tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for table rows */
+}
+
+#lang tfoot td {
+    font-weight: bold;
+    background-color: #e9ecef; /* Light background for footer */
+}
+
+/* Celebrities Section */
+#celebrities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items within their grid cells */
+}
+
+#celebrities article {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#celebrities article:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+#celebrities img {
+    max-width: 100%;
+    height: 150px; /* Fixed height for celebrity images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 50%; /* Circular images */
+    border: 3px solid #007bff; /* Blue border */
+    margin-bottom: 10px;
+}
+
+#celebrities figcaption {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Quizz Form Styles */
+#quizz fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#quizz legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    padding: 0 10px;
+}
+
+#quizz label {
+    display: inline-block; /* Make labels inline */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#quizz input[type="text"],
+#quizz input[type="email"],
+#quizz textarea,
+#quizz select {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+#quizz input[type="radio"],
+#quizz input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#quizz select {
+    width: 100%; /* Ensure select takes full width */
+}
+
+#quizz button[type="submit"] {
+    background-color: #28a745; /* Green submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+#quizz button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 30px;
+    border-top: 5px solid #007bff; /* A distinct top border */
+}
+
+footer address {
+    font-style: normal; /* Remove default italic for address */
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #007bff; /* Blue links in footer */
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block; /* For consistent spacing */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #66b3ff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design (Media Queries) */
+@media (min-width: 768px) {
+    #tourism article {
+        flex-direction: row; /* Side-by-side on larger screens */
+    }
+
+    #tourism article:nth-child(even) {
+        flex-direction: row-reverse; /* Alternate image/text order */
+    }
+
+    #tourism article figure {
+        flex: 1; /* Images take equal space */
+        min-width: 300px; /* Minimum width for images */
+    }
+
+    #tourism article p {
+        flex: 2; /* Text takes more space */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #firstPage h1 {
+        font-size: 2.5rem;
+    }
+
+    #firstPage p {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        align-items: center; /* Center them */
+    }
+
+    #lang table {
+        width: 100%;
+        font-size: 0.9em; /* Smaller font for tables on small screens */
+    }
+
+    #lang th,
+    #lang td {
+        padding: 8px;
+    }
+
+    #quizz input[type="text"],
+    #quizz input[type="email"],
+    #quizz textarea,
+    #quizz select {
+        width: 100%; /* Full width for inputs */
+    }
+}

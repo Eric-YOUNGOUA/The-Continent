@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/icon.png">
+    <script src="./assets/javascript/java2.js" defer></script>
+    <title>THE CONTINENT</title>
+</head>
+<body>
+   <section id="quizz">
+            <h2 role="doc-subtitle">Quizz</h2>
+            <form action="" target="_blank" method="post">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label for="firstName">First Name :</label>
+                    <input required aria-required="true" type="text" id="firstName" name="First Name"><br><br>
+                    <label for="lastName">Last Name :</label>
+                    <input required aria-required="true" type="text" id="lastName" name="Last Name"><br><br>
+                    <label for="email">Address :</label>
+                    <input  aria-required="false" type="email" id="email" name="Email" placeholder="example@email.com">
+                </fieldset>
+                <fieldset id="questions">
+                    <legend>Questions</legend>
+                    <p> 1&#41; How many regions the cameroun has ?</p>
+                    <input checked aria-checked="true" type="radio" id="firstQuestion" name="answer1" value="11">
+                    <label for="firstQuestion">11</label><br>
+                    <input aria-checked="false" type="radio" id="secondOption" name="answer1" value="12">
+                    <label for="firstQuestion">12</label><br>
+                    <input aria-checked="false" type="radio" id="thirdOption" name="answer1" value="10">
+                    <label for="firstQuestion">10</label><br>
+                    <input aria-checked="false" type="radio" id="fourthOption" name="answer1" value="9">
+                    <label for="firstQuestion">9</label>
+    
+                    <p> 2&#41; Which of these country border the Camenroun ?</p>
+                    <input aria-checked="true" checked type="checkbox" id="secondQuestion" name="answer2" value="Nigeria">
+                    <label for="secondQuestion">Nigeria</label><br>
+                    <input aria-checked="false" type="checkbox" id="secondOption" name="answer2" value="Senegal">
+                    <label for="secondQuestion">Senegal</label><br>
+                    <input aria-checked="false" type="checkbox" id="thirdOption" name="answer2" value="Gabon">
+                    <label for="secondQuestion">Gabon</label><br>
+                    <input aria-checked="false" type="checkbox" id="fourthOption" name="answer2" value="Mali">
+                    <label for="seconanswer2">Mali</label>
+    
+                    <p> 3&#41; Where is located the Waza national park ?  </p>
+                    <input aria-checked="true" checked type="radio" id="thirdQuestion" name="answer3" value="Far North">
+                    <label for="thirdQuestion">Far North</label><br>
+                    <input aria-checked="false" type="radio" id="secondOption" name="answer3" value="Center">
+                    <label for="thirdQuestion">Center</label><br>
+                    <input aria-checked="false" type="radio" id="thirdOption" name="answer3" value="Littoral">
+                    <label for="thirdQuestion">Littoral</label><br>
+                    <input aria-checked="false" type="radio" id="fourthOption" name="answer3" value="North">
+                    <label for="thirdQuestion">North</label>
+
+                    <!-- I am here  -->
+                    <p> 4&#41; Who is this personnality ?</p> 
+                    <button id="showCeleb" type="button">Afficher une célébrité</button><br>
+                    <img id="randomCeleb" src="" alt="Célébrité aléatoire" style="display: none;">
+                    <input checked aria-checked="true" type="radio" id="fourthQuestion" name="answer4" value="Francis Ngannou">
+                    <label for="fourthQuestion">Francis Ngannou</label><br>
+                    <input aria-checked="false" type="radio" id="secondOption" name="answer4" value="Samuel Eto'o">
+                    <label for="fourthQuestion">Samuel Eto'o</label><br>
+                    <input aria-checked="false" type="radio" id="thirdOption" name="answer4" value="ERIC YOUNG'Z">
+                    <label for="fourthQuestion">ERIC YOUNG'Z</label><br>
+                    <input aria-checked="false" type="radio" id="fourthOption" name="answer4" value="Maurice Kamto">
+                    <label for="fourthQuestion">Maurice Kamto</label><br>
+                    <input aria-checked="false" type="radio" id="fifthOption" name="answer4" value="Tayc">
+                    <label for="fourthQuestion">Tayc</label><br>
+                    <input aria-checked="false" type="radio" id="sixthOption" name="answer4" value="Joel Embiid">
+                    <label for="fourthQuestion">Joel Embiid</label>
+
+    
+                    <p> 5&#41; How was the presentation ?</p>
+                    <label for="rating">The presentation was:</label>
+                    <select name="note" id="rating">
+                        <option aria-selected="false" value="bad">Bad</option>
+                        <option aria-selected="false" value="acceptable">Acceptable</option>
+                        <option aria-selected="false" value="good">Good</option>
+                        <option aria-selected="false" value="very good">Very Good</option>
+                        <option aria-selected="true" selected value="perfect">Perfect</option>
+                    </select>
+    
+                    <p> 6&#41; What do you want to know more about Cameroun ?</p>
+                    <label for="comment">What have we to add ?</label><br>
+                    <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Write here what do you want to know" maxlength="1000"></textarea><br>
+    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+</body>
+</html>

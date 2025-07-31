@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #5ba35ba8;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#firstPage{
+    display: table;
+    margin: 10px 0;
+}
+
+h1 {
+    margin: 10px;
+}
+
+h1 + p{
+    font-size: larger;
+    margin: 5px 10px;
+}
+
+nav {
+    background-color: rgba(165, 42, 42, 0.444);
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover{
+    font-size: larger;
+    font-weight: bolder;
+    color:black;
+}
+
+nav ul li a:active{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+}
+
+section{
+    margin: 10px;
+}
+
+#tourism article{
+    padding: 5px;
+    margin:  5px auto;
+    border: 2px solid rgb(36, 35, 35);
+    width: 310px;
+    height: 392px;
+}
+
+#tourism img {
+    width: 300px;
+    height: 200px;
+}
+
+figure {
+    padding: auto;
+}
+
+figcaption {
+    text-decoration:dashed;
+    font-size: large;
+}
+
+table {
+  width: 80%;
+  margin: 20px 10%;  
+}
+
+table th {
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#celcel, #toutou{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#celebrities article{
+    padding: 5px;
+    margin:  5px auto;
+    border: 2px solid rgb(36, 35, 35);
+    width: 210px;
+    height: 240px;
+}
+
+#celebrities img {
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    margin: 10px;
+    text-align: center;
+}
+
+/*Boooooo*/
+
+#quizz{
+    margin-left: 10px;
+}
+
+fieldset legend,p,input,label, button,textarea{
+    margin-left: 10px;
+}
+
+fieldset button, textarea{
+    margin: 5px;
+}
+
+#quizz div{
+  display: flex;
+  justify-content: center;
+}
+
+#quizzButton {
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#quizzButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#quizzButton:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
