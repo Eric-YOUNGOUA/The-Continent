@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Q4
       const q4 = form.querySelector('input[name="answer4"]:checked');
-      if (q4 && selectedCeleb && q4.value === selectedCeleb.name) score++; 
+      if (q4 && selectedCeleb && q4.value === selectedCeleb.name) score++;
 
-      
+
       // Récupération des infos utilisateur
       const firstName = document.getElementById("firstName").value;
       const lastName = document.getElementById("lastName").value;
@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const siteRating = document.getElementById("rating").value;
       const comment = document.getElementById("comment").value;
 
-       // Stockage dans l'array
+      // Stockage dans l'array
       responses.push({
-           firstName,
-           lastName,
-           email,
-           siteRating,
-           comment,
-           quizScore: score
+        firstName,
+        lastName,
+        email,
+        siteRating,
+        comment,
+        quizScore: score
       });
 
 
@@ -73,4 +73,21 @@ document.addEventListener("DOMContentLoaded", () => {
       img.style.height = "200px";
     });
   }
+
+
+  function limitCheckboxes(maxAllowed) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const checkedCount = Array.from(checkboxes).filter(c => c.checked).length;
+        if (checkedCount > maxAllowed) {
+          cb.checked = false;
+          alert(`You can only choose ${maxAllowed} options.`);
+        }
+      });
+    });
+  }
+
+  window.onload = () => limitCheckboxes(2);
+
 });
