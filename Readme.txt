@@ -15,7 +15,7 @@ Table of Contents
 
 1. Overview
 
-This project is a single-page website designed to introduce visitors to Cameroon. It aims to provide key information about the country's location and borders, showcase its diverse tourist attractions, explain its official and common languages (including Camfranglais), and present some of its well-known celebrities. The site also includes an interactive quiz to test visitors' knowledge.
+This project is a double page website designed to introduce visitors to Cameroon. It aims to provide key information about the country's location and borders, showcase its diverse tourist attractions, explain its official and common languages (including Camfranglais), and present some of its well-known celebrities. The site also includes an interactive quiz to test visitors' knowledge.
 
 ---
 
@@ -59,11 +59,15 @@ No special server setup or dependencies are required, as it's a static website.
 ```
 .
 ├── index.html
+├── quizz.html
+├── web programming project.pptx
+├── web programming report.docx
 ├── assets/
 │   ├── css/
 │   │   └── style.css
 │   ├── javascript/
-│   │   └── java.js
+│   │   ├── java.js
+│   |   ├── java2.js
 │   └── images/
 │       ├── Eto'o.jpg
 │       ├── Ngannou.jpg
@@ -94,4 +98,3 @@ For any questions or inquiries, please contact:
 
 * Email: mericyoungoua.ir2027@esaip.org
 * Phone: +33753128429
-
